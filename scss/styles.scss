@@ -1,0 +1,148 @@
+$max-width: 100%;
+$img-height: 284px;
+
+@font-face {
+    font-family: "Digi";
+    src: url("../fonts/DS-DIGI.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 15px;
+}
+
+h1 {
+    font-size: larger;
+    font-weight: 300; 
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.full-width-image {
+  display: block;         
+  width: $max-width;       
+  height: $img-height;
+  object-fit: cover;        
+  object-position: center;    
+  margin: 0 auto;         
+}
+
+.image-container {
+  max-width: $max-width;         
+  overflow: hidden;       
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.ingredients-container {
+    background-color: gainsboro;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 15px;
+}
+
+.list-container{
+    display: flex;
+    gap: 20px;
+}
+.checkbox-list {
+    list-style: none; 
+    padding: 0;
+}
+
+.checkbox-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+  
+.checkbox-list li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.time-container {
+    padding: 15px;
+}
+
+.clock-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+  
+.time {
+    font-family: "Digi";
+    font-size: 60px;
+    margin: 0;
+}
+
+.recipe-container {
+    padding: 30px;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+  }
+
+.grid-item {
+    display: flex;
+    gap: 12px;
+}
+
+.number {
+    background-color: gainsboro;
+    border-radius: 8px;
+    height: fit-content;
+    padding: 12px;
+    font-size: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;   
+    padding: 15px;
+}
+
+.copyright {
+    display: flex;
+}
+
+.copyright img {
+    height: 16px;
+    align-self: center;
+}
+
+.icons {
+    display: flex;
+    gap: 24px;
+}
+
+.icons img {
+    width: 18px;
+}
